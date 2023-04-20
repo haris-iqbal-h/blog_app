@@ -9,3 +9,5 @@
 # re-using useFetch Hook in details page
 # delete the item & useNavigate
 # 404 page redirect
+# help series
+# https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&ab_channel=TheNetNinja
