@@ -7,3 +7,5 @@
 # react router
 # useEffect CleanUp within the unmonuted state
 # re-using useFetch Hook in details page
+# delete the item & useNavigate
+# 404 page redirect

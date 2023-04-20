@@ -7,9 +7,10 @@ const useFetch = (url) => {
     
 
     useEffect(() => {
+        //for unmonunted state change
         const abortCont=new AbortController();
         //delay for display loading for 1 second
-        setTimeout(() => {
+        // setTimeout(() => {
             fetch(url,{signal:abortCont.signal})
                 .then(res=>{
                     if(!res.ok){
@@ -29,7 +30,7 @@ const useFetch = (url) => {
                     setIsPending(false)
                     setError(e.message)
                 })
-        }, 1000);
+        // }, 1000);
         return () => abortCont.abort()
     }, [url]);
     return {data,isPending,error}

@@ -4,6 +4,7 @@ import Home from './Components/Home'
 import Create from './Components/Create'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import BlogDetails from './Components/BlogDetails'
+import NotFound from './Components/NotFound'
 
 const App = () => {
 
@@ -17,8 +18,8 @@ const App = () => {
                 <Route path='/' element={<Home/>} />
                 <Route path='/create' element={<Create/>} />
                 <Route path='/blogs/:id' element={<BlogDetails/>} />
+                <Route path='*' element={<NotFound/>}/>
               </Routes>
-                <Home/>
             </div>
         </div>
     </Router>
